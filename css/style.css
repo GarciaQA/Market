@@ -99,8 +99,14 @@
     font-family: 'Sofia Pro';
 }
 
-body {
+html, body {
     overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    width: 100vw;
 }
 
 h2, .card{
@@ -311,6 +317,9 @@ footer div > div {
 }
 
 @media (max-width: 978px) {
+    .header input {
+        display: none;
+    }
     .main-banner{
         height: 300px;
     }
