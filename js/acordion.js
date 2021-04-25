@@ -25,27 +25,54 @@ new Swiper('.main-banner', {
 });
 
 new Swiper('.products', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    }
 });
 
 new Swiper('.offers', {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 30,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  }
 });
 
 $(function(){
 
-  $('a').click(function(e){
-    console.log($($(this).attr('href')));
+  $('.category-item').click(function(e){
     $('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top}, 100);
   });
 
