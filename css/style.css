@@ -1,0 +1,272 @@
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Sofia Pro'), url('https://fonts.cdnfonts.com/s/14903/Sofia Pro Regular Az.woff') format('woff');
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Sofia Pro'), url('https://fonts.cdnfonts.com/s/14903/Sofia Pro Regular Italic Az.woff') format('woff');
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 250;
+    src: local('Sofia Pro'), url('https://fonts.cdnfonts.com/s/14903/Sofia Pro ExtraLight Az.woff') format('woff');
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 250;
+    src: local('Sofia Pro'), url('https://fonts.cdnfonts.com/s/14903/Sofia Pro UltraLight Az.woff') format('woff');
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: italic;
+    font-weight: 250;
+    src: local('Sofia Pro'), url('https://fonts.cdnfonts.com/s/14903/Sofia Pro ExtraLight Italic Az.woff') format('woff');
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: italic;
+    font-weight: 250;
+    src: local('Sofia Pro'), url('https://fonts.cdnfonts.com/s/14903/Sofia Pro UltraLight Italic Az.woff') format('woff');
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Sofia Pro'), url('https://fonts.cdnfonts.com/s/14903/Sofia Pro Light Az.woff') format('woff');
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Sofia Pro'), url('https://fonts.cdnfonts.com/s/14903/Sofia Pro Light Italic Az.woff') format('woff');
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Sofia Pro'), url('https://fonts.cdnfonts.com/s/14903/Sofia Pro Medium Az.woff') format('woff');
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: italic;
+    font-weight: 500;
+    src: local('Sofia Pro'), url('https://fonts.cdnfonts.com/s/14903/Sofia Pro Medium Italic Az.woff') format('woff');
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Sofia Pro'), url('https://fonts.cdnfonts.com/s/14903/Sofia Pro Semi Bold Az.woff') format('woff');
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: italic;
+    font-weight: 600;
+    src: local('Sofia Pro'), url('https://fonts.cdnfonts.com/s/14903/Sofia Pro Semi Bold Italic Az.woff') format('woff');
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Sofia Pro'), url('https://fonts.cdnfonts.com/s/14903/Sofia Pro Bold Az.woff') format('woff');
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Sofia Pro'), url('https://fonts.cdnfonts.com/s/14903/Sofia Pro Bold Italic Az.woff') format('woff');
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Sofia Pro'), url('https://fonts.cdnfonts.com/s/14903/Sofia Pro Black Az.woff') format('woff');
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: italic;
+    font-weight: 900;
+    src: local('Sofia Pro'), url('https://fonts.cdnfonts.com/s/14903/Sofia Pro Black Italic Az.woff') format('woff');
+}
+
+*{
+    font-family: 'Sofia Pro';
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h2, .card{
+    margin: 0 20px 20px;
+}
+
+a, a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+.card{
+    border-color: #C5C5C5;
+}
+
+.card-offer{
+    border: 0;
+}
+
+.see-more{
+    margin: 0 20px 20px;
+}
+
+.header{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8463760504201681) 100%);
+}
+
+footer, .btn-yellow, .header input{
+    background-color: #FDBD0B !important;
+}
+
+.yellow{
+    color: #FDBD0B;
+}
+
+.header input{
+    border-radius: 10px;
+    width: 30vw;
+    border: 0;
+}
+
+.btn-icon {
+    font-size: 0;
+    padding: 0;
+    outline: none;
+}
+
+.btn-icon span{
+    font-size: 26px;
+}
+
+.header input::placeholder{
+    color: #000;
+}
+
+.main-banner {
+    margin: 50px 0;
+    width: 100vw;
+    height: 480px;
+}
+
+.offer-img{
+    width: 100%;
+    padding: 10px;
+}
+
+.offers .card .row div:nth-child(2) {
+    align-self: flex-end;
+}
+
+.offers .card .row div:nth-child(2) img{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.swiper-slide{
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.category-item, .card {
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.category-item {
+    background-color: #FDBD0B;
+    margin: 40px 15px;
+    height: 80px;
+    display: inline-flex;
+    width: 20%;
+}
+
+.category-item .row div{
+    align-self: center;
+}
+
+.category-item .row div .card-title {
+    margin: 0;
+    text-align: center;
+}
+
+.category-item .category-img{
+    margin-left: 15px;
+    width: 100%;
+    padding: 10px;
+}
+.offers .category-img{
+    width: 100%;
+    padding: 10px;
+}
+
+.category-item:hover, .product:hover, .card-offer:hover{
+    border-color: transparent;
+    transition: 0.2s;
+    transform: scale(1.03);
+    box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 0%), 0px 8px 10px 1px rgb(0 0 0 / 0%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+    border: 0;
+}
+
+.products{
+    width: 100vw;
+    margin-bottom: 30px;
+}
+
+.product-image.card-img-top {
+    height: 180px;
+    background-position: center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    text-align: center;
+}
+
+.wear-image.card-img-top {
+    height: 180px;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    overflow: hidden;
+    text-align: end;
+}
+
+.wear-image .badge{
+    margin-right: 5px;
+}
+
+.card-main-img{
+    height: 100%;
+    width: auto;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.btn-radius{
+    border-radius: 6px;
+}
+
+footer div > div {
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+.follow-icon{
+    border-radius: 7px;
+}
