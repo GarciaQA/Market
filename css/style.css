@@ -163,6 +163,7 @@ a:hover {
 
 .header a.navbar-brand {
     margin: 0;
+    font-weight: bold;
     color: #ec1c24;
 }
 
@@ -265,7 +266,7 @@ footer,
 }
 
 .category-item .row div .card-title {
-    margin: 0;
+    margin: 0 0 0 5px;
     font-size: 18px;
 }
 
@@ -524,6 +525,17 @@ footer div>div:nth-child(3){
 
     .offers .card .row div:nth-child(2) {
         text-align: end;
+    }
+
+    ul.context-menu-list.context-menu-root {
+        top: 0 !important;
+        right: 0 !important;
+        left: auto !important;
+        z-index: 1034 !important;
+        height: 100vh !important;
+        max-height: 100vh;
+        margin: 0;
+        border-radius: 10px 0 0 10px;
     }
 
     .col-md-7 {
