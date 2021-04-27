@@ -13,6 +13,8 @@
   <link
     href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
     rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.contextMenu.min.css">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,163 +23,103 @@
   <nav class="navbar fixed-top navbar-light header">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Mitienda</a>
-      <div class="d-flex justify-content-between">
+      <!-- <div class="d-flex justify-content-between">
         <input class="form-control me-2" type="search" placeholder="¿Qué estas buscando?" aria-label="Busqueda">
-      </div>
-      <a class="navbar-brand">
+      </div> -->
+      <!-- <a class="navbar-brand">
         <button class="btn btn-icon">
           <span class="material-icons-outlined">shopping_bag</span>
         </button>
-      </a>
+      </a> -->
     </div>
   </nav>
 
   <div class="main-banner">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <div class="card" style="background: url('https://wongfood.vtexassets.com/arquivos/BH8-FOOD-NO-COMESTIBLES-desktop-2404.png?v=637548314571230000');"></div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card" style="background: url('https://wongfood.vtexassets.com/arquivos/BH2-ELECTRO-desktop-24042021.png?v=637548293252270000');"></div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card" style="background: url('https://wongfood.vtexassets.com/arquivos/BH6-FOOD-ABARROTES-desktop-24042021.png?v=637548293259300000');"></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="offers">
-    <h2>Ofertas</h2>
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="card card-offer mb-3" style="background-color: #e8e8e8;">
-          <div class="row g-0">
-            <div class="col-md-7">
-              <div class="card-body">
-                <p class="card-text">Todo vestuario</p>
-                <h3 class="card-title yellow">20%</h3>
-                <a href="#" class="btn btn-yellow btn-radius">Comprar</a>
-              </div>
-            </div>
-            <div class="col-md-5">
-              <img src="https://falabella.scene7.com/is/image/FalabellaPE/881776730?wid=480&hei=480&qlt=70 2x"
-                alt="grovery" class="category-img">
-            </div>
-          </div>
+        <div class="card"
+          style="background: url('https://wongfood.vtexassets.com/arquivos/BH8-FOOD-NO-COMESTIBLES-desktop-2404.png?v=637548314571230000');">
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="card card-offer mb-3 shadow1">
-          <div class="row g-0">
-            <div class="col-md-7">
-              <div class="card-body">
-                <p class="card-text">Todo abarrotes</p>
-                <h3 class="card-title yellow">15%</h3>
-                <a href="#" class="btn btn-yellow btn-radius">Comprar</a>
-              </div>
-            </div>
-            <div class="col-md-5">
-              <img
-                src="https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/42376942-G3XiZjoZ.jpg"
-                alt="grovery" class="category-img">
-            </div>
-          </div>
+        <div class="card"
+          style="background: url('https://wongfood.vtexassets.com/arquivos/BH2-ELECTRO-desktop-24042021.png?v=637548293252270000');">
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="card card-offer mb-3 shadow1">
-          <div class="row g-0">
-            <div class="col-md-7">
-              <div class="card-body">
-                <p class="card-text">Todo calzado</p>
-                <h3 class="card-title yellow">10%</h3>
-                <a href="#" class="btn btn-yellow btn-radius">Comprar</a>
-              </div>
-            </div>
-            <div class="col-md-5">
-              <img src="https://home.ripley.com.pe/Attachment/WOP_5/2025263899336/2025263899336-1.jpg" alt="grovery"
-                class="category-img">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card card-offer mb-3" style="background-color: #e8e8e8;">
-          <div class="row g-0">
-            <div class="col-md-7">
-              <div class="card-body">
-                <p class="card-text">Todo vestuario</p>
-                <h3 class="card-title yellow">20%</h3>
-                <a href="#" class="btn btn-yellow btn-radius">Comprar</a>
-              </div>
-            </div>
-            <div class="col-md-5">
-              <img src="https://falabella.scene7.com/is/image/FalabellaPE/881776730?wid=480&hei=480&qlt=70 2x"
-                alt="grovery" class="category-img">
-            </div>
-          </div>
+        <div class="card"
+          style="background: url('https://wongfood.vtexassets.com/arquivos/BH6-FOOD-ABARROTES-desktop-24042021.png?v=637548293259300000');">
         </div>
       </div>
     </div>
   </div>
 
-  <div class="categories-web d-flex justify-content-around">
-    <a href="#abarrotes" class="category-item">
+  <div class="row categories-web">
+    <a href="#abarrotes" class="col-6 col-md-2 category-item">
       <div class="row g-0">
         <div class="col-md-4">
           <img src="resources/svg/grocery.svg" alt="grovery" class="category-img">
         </div>
         <div class="col-md-8">
-          <div class="card-body">
+          <div>
             <h5 class="card-title">Abarrotes</h5>
           </div>
         </div>
       </div>
     </a>
-    <a href="#vestuario" class="category-item">
+    <a href="#vestuario" class="col-6 col-md-2 category-item">
       <div class="row g-0">
         <div class="col-md-4">
           <img src="resources/svg/sport-wear.svg" alt="grovery" class="category-img">
         </div>
         <div class="col-md-8">
-          <div class="card-body">
+          <div>
             <h5 class="card-title">Vestuario</h5>
           </div>
         </div>
       </div>
     </a>
-    <a href="#calzado" class="category-item">
+    <a href="#vestuario" class="col-6 col-md-2 category-item">
       <div class="row g-0">
         <div class="col-md-4">
           <img src="resources/svg/shoes.svg" alt="grovery" class="category-img">
         </div>
         <div class="col-md-8">
-          <div class="card-body">
+          <div>
             <h5 class="card-title">Calzado</h5>
           </div>
         </div>
       </div>
     </a>
-    <a href="#juguetes" class="category-item">
+    <a href="#juguetes" class="col-6 col-md-2 category-item">
       <div class="row g-0">
         <div class="col-md-4">
           <img src="resources/svg/toys.svg" alt="grovery" class="category-img">
         </div>
         <div class="col-md-8">
-          <div class="card-body">
+          <div>
             <h5 class="card-title">Juguetes</h5>
           </div>
         </div>
       </div>
     </a>
-    <a href="#electro" class="category-item">
+    <a href="#electro" class="col-6 col-md-2 category-item">
       <div class="row g-0">
         <div class="col-md-4">
           <img src="resources/svg/televisor.svg" alt="grovery" class="category-img">
         </div>
         <div class="col-md-8">
-          <div class="card-body">
+          <div>
             <h5 class="card-title">Electro</h5>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="#" class="col-6 col-md-2 category-item context-menu-one">
+      <div class="row g-0">
+        <div class="col-md-12">
+          <div>
+            <h5 class="card-title">+ Categorias</h5>
           </div>
         </div>
       </div>
@@ -186,8 +128,8 @@
 
   <div class="products segment1" id="abarrotes">
     <div class="d-flex justify-content-between">
-      <div>
-        <h2>Abarrotes</h2>
+      <div class="category-title">
+        <img src="resources/svg/sport-wear.svg" alt="grovery" class="category-img"><h2>Abarrotes</h2>
       </div>
       <div>
         <span class="see-more">Ver todos</span>
@@ -195,51 +137,27 @@
     </div>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <div class="card product">
-          <div class="product-image card-img-top"
-            style="background: url('https://plazavea.vteximg.com.br/arquivos/ids/554165-1000-1000/641425.jpg?v=637426577652870000')">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Arroz Extra Costeño Bolsa 5 Kg</h5>
-            <p class="card-text">S/80.00</p>
-            <div class="buttons"><a href="#" class="btn btn-yellow btn-radius">Comprar</a></div>
-          </div>
+        <div class="card product"
+          style="background: url('https://wongfood.vteximg.com.br/arquivos/BC-PERECIBLES_03-2404.jpg?v=637548314272930000')">
+          <button class="btn btn-danger buy">Comprar</button>
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="card product">
-          <div class="product-image card-img-top"
-            style="background: url('https://wongfood.vteximg.com.br/arquivos/ids/387710-1000-1000/566380-1.jpg?v=637388529823830000')">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Bombones Multipack Nestle 360 g</h5>
-            <p class="card-text">S/80.00</p>
-            <div class="buttons"><a href="#" class="btn btn-yellow btn-radius">Comprar</a></div>
-          </div>
+        <div class="card product"
+          style="background: url('https://wongfood.vteximg.com.br/arquivos/BC-DESPENSA_05-2404.png?v=637548314253400000')">
+          <button class="btn btn-danger buy">Comprar</button>
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="card product">
-          <div class="product-image card-img-top"
-            style="background: url('https://wongfood.vteximg.com.br/arquivos/ids/225102-1000-1000/3198-1.jpg?v=636628712521130000')">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Aceite Vegetal Primor Premium Botella 1 L</h5>
-            <p class="card-text">S/80.00</p>
-            <div class="buttons"><a href="#" class="btn btn-yellow btn-radius">Comprar</a></div>
-          </div>
+        <div class="card product"
+          style="background: url('https://wongfood.vtexassets.com/arquivos/BC-DESPENSA_03-2404.jpg?v=637548314259800000')">
+          <button class="btn btn-danger buy">Comprar</button>
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="card product">
-          <div class="product-image card-img-top"
-            style="background: url('https://wongfood.vteximg.com.br/arquivos/ids/353201-1000-1000/341068-1.jpg?v=637219025506330000')">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Cerveza Stella Artois Pack 6 Botellas de 330 ml c/u</h5>
-            <p class="card-text">S/ 29.90</p>
-            <div class="buttons"><a href="#" class="btn btn-yellow btn-radius">Comprar</a></div>
-          </div>
+        <div class="card product"
+          style="background: url('https://wongfood.vteximg.com.br/arquivos/BC-BEBIBLES_05-2404.png?v=637548314249970000')">
+          <button class="btn btn-danger buy">Comprar</button>
         </div>
       </div>
     </div>
@@ -247,7 +165,7 @@
 
   </div>
 
-  <div class="products segment2" id="vestuario">
+  <!-- <div class="products segment2" id="vestuario">
     <div class="d-flex justify-content-between">
       <div>
         <h2>Vestuario</h2>
@@ -324,14 +242,13 @@
         </div>
       </div>
     </div>
-    <!-- Add Pagination -->
 
-  </div>
+  </div> -->
 
-  <div class="products segment3" id="calzado">
+  <div class="products segment2" id="calzado">
     <div class="d-flex justify-content-between">
-      <div>
-        <h2>Calzado</h2>
+      <div class="category-title">
+        <img src="resources/svg/sport-wear.svg" alt="grovery" class="category-img"><h2>Vestuario</h2>
       </div>
       <div>
         <span class="see-more">Ver todos</span>
@@ -339,55 +256,27 @@
     </div>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <div class="card product">
-          <div class="product-image card-img-top"
-            style="background: url('https://home.ripley.com.pe/Attachment/WOP_5/2025247012409/2025247012409-1.jpg')">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">MARQUIS ZAPATILLAS URBANAS HOMBRE BOHO</h5>
-            <p class="card-text">S/ 99.95</p>
-            <div class="buttons"><a href="#" class="btn btn-yellow btn-radius">Comprar</a></div>
-          </div>
+        <div class="card product"
+          style="background: url('https://oechsle.vteximg.com.br/arquivos/02-Lomastop-regularMama-2404-b.png')">
+          <button class="btn btn-danger buy">Comprar</button>
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="card product">
-          <div class="product-image card-img-top"
-            style="background: url('https://home.ripley.com.pe/Attachment/WOP_5/2025241071488/2025241071488-1.jpg')">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">MARQUIS BOTINES MIMO PARA HOMBRE</h5>
-            <p class="card-text">S/ 239.95</p>
-            <div class="buttons"><a href="#" class="btn btn-yellow btn-radius">Comprar</a></div>
-          </div>
+        <div class="card product"
+          style="background: url('https://oechsle.vteximg.com.br/arquivos/04-Lomastop-regularMama-2404.png')">
+          <button class="btn btn-danger buy">Comprar</button>
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="card product">
-          <div class="product-image card-img-top"
-            style="background: url('https://home.ripley.com.pe/Attachment/WOP_5/2025246205673/2025246205673-1.jpg')">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">ADIDAS ZAPATILLAS URBANAS TEAM COURT PARA HOMBRE</h5>
-            <p class="card-text">S/ 149.40</p>
-            <div class="buttons"><a href="#" class="btn btn-yellow btn-radius">Comprar</a></div>
-          </div>
+        <div class="card product"
+          style="background: url('https://oechsle.vteximg.com.br/arquivos/05-Lomastop-regularMama-2404.png')">
+          <button class="btn btn-danger buy">Comprar</button>
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="card product">
-          <div class="product-image card-img-top"
-            style="background: url('https://falabella.scene7.com/is/image/FalabellaPE/17324266_1?wid=800&hei=800&qlt=70')">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Zapatillas Running Mujer adidas Ultimashow</h5>
-            <p class="card-text">
-              S/ 113.40 (Oferta)
-              <br>
-              S/ 189
-            </p>
-            <div class="buttons"><a href="#" class="btn btn-yellow btn-radius">Comprar</a></div>
-          </div>
+        <div class="card product"
+          style="background: url('https://oechsle.vteximg.com.br/arquivos/08-Lomastop-regularMama-2404.png')">
+          <button class="btn btn-danger buy">Comprar</button>
         </div>
       </div>
     </div>
@@ -397,8 +286,8 @@
 
   <div class="products segment4" id="juguetes">
     <div class="d-flex justify-content-between">
-      <div>
-        <h2>Juguetes</h2>
+      <div class="category-title">
+        <img src="resources/svg/toys.svg" alt="grovery" class="category-img"><h2>Juguetes</h2>
       </div>
       <div>
         <span class="see-more">Ver todos</span>
@@ -406,51 +295,27 @@
     </div>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <div class="card product">
-          <div class="product-image card-img-top"
-            style="background: url('https://home.ripley.com.pe/Attachment/WOP_5/2032251772144/2032251772144_2.jpg')">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">MARVEL AVENGERS BLAST GEAR TITAN IRON MAN E7380</h5>
-            <p class="card-text">S/ 64.90</p>
-            <div class="buttons"><a href="#" class="btn btn-yellow btn-radius">Comprar</a></div>
-          </div>
+        <div class="card product"
+          style="background: url('https://wongfood.vteximg.com.br/arquivos/BC-BAZAR_03-2404.jpg?v=637548314242100000')">
+          <button class="btn btn-danger buy">Comprar</button>
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="card product">
-          <div class="product-image card-img-top"
-            style="background: url('https://home.ripley.com.pe/Attachment/WOP/2032129627804/2032129627804_2.jpg')">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">HASBRO GAMING MONOPOLY PERÚ 01610</h5>
-            <p class="card-text">S/ 69.93</p>
-            <div class="buttons"><a href="#" class="btn btn-yellow btn-radius">Comprar</a></div>
-          </div>
+        <div class="card product"
+          style="background: url('https://wongfood.vteximg.com.br/arquivos/BC-BAZAR_05-2404.png?v=637548314246830000')">
+          <button class="btn btn-danger buy">Comprar</button>
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="card product">
-          <div class="product-image card-img-top"
-            style="background: url('https://home.ripley.com.pe/Attachment/WOP_5/2032255334096/2032255334096_2.jpg')">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">NERF LANZADOR ULTRA TWO</h5>
-            <p class="card-text">S/ 74.90</p>
-            <div class="buttons"><a href="#" class="btn btn-yellow btn-radius">Comprar</a></div>
-          </div>
+        <div class="card product"
+          style="background: url('https://wongfood.vtexassets.com/arquivos/TMUNECA-23-04.png?v=637548312498830000')">
+          <button class="btn btn-danger buy">Comprar</button>
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="card product">
-          <div class="product-image card-img-top"
-            style="background: url('https://falabella.scene7.com/is/image/FalabellaPE/881893244?wid=480&hei=480&qlt=70 2x')">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Muñeca Sorpresa Bubbly LOL</h5>
-            <p class="card-text">S/ 107.90</p>
-            <div class="buttons"><a href="#" class="btn btn-yellow btn-radius">Comprar</a></div>
-          </div>
+        <div class="card product"
+          style="background: url('https://wongfood.vtexassets.com/arquivos/BC-416-x-438rodados-.23.04.png?v=637548228477300000')">
+          <button class="btn btn-danger buy">Comprar</button>
         </div>
       </div>
     </div>
@@ -460,8 +325,8 @@
 
   <div class="products segment5" id="electro">
     <div class="d-flex justify-content-between">
-      <div>
-        <h2>Electro</h2>
+      <div class="category-title">
+        <img src="resources/svg/televisor.svg" alt="grovery" class="category-img"><h2>Electro</h2>
       </div>
       <div>
         <span class="see-more">Ver todos</span>
@@ -469,51 +334,27 @@
     </div>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <div class="card product">
-          <div class="product-image card-img-top"
-            style="background: url('https://home.ripley.com.pe/Attachment/WOP_5/2018252768010/2018252768010_2.jpg')">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">SAMSUNG SMART TV CRYSTAL UHD 4K 58" UN58TU7000GXPE</h5>
-            <p class="card-text">S/ 1,999</p>
-            <div class="buttons"><a href="#" class="btn btn-yellow btn-radius">Comprar</a></div>
-          </div>
+        <div class="card product"
+          style="background: url('https://wongfood.vteximg.com.br/arquivos/BC-1204-ELECTRO_03.jpg?v=637535854132630000')">
+          <button class="btn btn-danger buy">Comprar</button>
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="card product">
-          <div class="product-image card-img-top"
-            style="background: url('https://home.ripley.com.pe/Attachment/WOP_5/2018252813611/2018252813611_2.jpg')">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">TCL SMART TV UHD 55" 55P715</h5>
-            <p class="card-text">S/ 1,699</p>
-            <div class="buttons"><a href="#" class="btn btn-yellow btn-radius">Comprar</a></div>
-          </div>
+        <div class="card product"
+          style="background: url('https://wongfood.vteximg.com.br/arquivos/BC-1204-ELECTRO_05.png?v=637535854139500000')">
+          <button class="btn btn-danger buy">Comprar</button>
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="card product">
-          <div class="product-image card-img-top"
-            style="background: url('https://home.ripley.com.pe/Attachment/WOP_5/2018235769195/2018235769195-1.jpg')">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">LG MINICOMPONENTE XBOOM CL87</h5>
-            <p class="card-text">S/ 1,099</p>
-            <div class="buttons"><a href="#" class="btn btn-yellow btn-radius">Comprar</a></div>
-          </div>
+        <div class="card product"
+          style="background: url('https://wongfood.vteximg.com.br/arquivos/BC-ELECTRO_03-2404.jpg?v=637548314259970000')">
+          <button class="btn btn-danger buy">Comprar</button>
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="card product">
-          <div class="product-image card-img-top"
-            style="background: url('https://falabella.scene7.com/is/image/FalabellaPE/882047687?wid=480&hei=480&qlt=70 2x')">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Consola Nintendo Switch 1.1 Neon</h5>
-            <p class="card-text">S/ 1,299</p>
-            <div class="buttons"><a href="#" class="btn btn-yellow btn-radius">Comprar</a></div>
-          </div>
+        <div class="card product"
+          style="background: url('https://wongfood.vteximg.com.br/arquivos/BC-ELECTRO_05-2404.png?v=637548314261370000')">
+          <button class="btn btn-danger buy">Comprar</button>
         </div>
       </div>
     </div>
@@ -521,7 +362,8 @@
 
   </div>
 
-  <div id="modal-details" class="modal fade animate__animated animate__zoomIn animate__faster" tabindex="-1" role="dialog" aria-hidden="true">
+  <div id="modal-details" class="modal fade animate__animated animate__zoomIn animate__faster" tabindex="-1"
+    role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-body">
@@ -533,11 +375,6 @@
   <footer>
     <div class="d-flex justify-content-between">
       <div class="footer-col-1">
-        <span>CONTÁCTANOS:</span>
-        <br>
-        +51 941955900
-        <br>
-        <br>
         <span>SIGUENOS EN:</span>
         <br>
         <img src="resources/svg/facebook.svg" alt="facebook" class="follow-icon">
@@ -546,11 +383,14 @@
         <img src="resources/svg/youtube.svg" alt="youtube" class="follow-icon">
       </div>
       <div class="footer-col-2">
+        <span>CONTÁCTANOS:</span>
+        <br>
+        +51 941955900
+      </div>
+      <div class="footer-col-3">
         <span>© 2021 Mitienda. Todos los derechos reservados</span>
         <br>
-        <span>Powered by:</span>
-        <br>
-        <span>TULIVERY</span>
+        <span>Powered by: TULIVERY</span>
       </div>
     </div>
   </footer>
@@ -566,6 +406,9 @@
   </script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.contextMenu.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.ui.position.js"></script>
 
   <script src="js/acordion.js"></script>
   <script src="js/responsive.js"></script>

@@ -19,7 +19,7 @@ new Swiper('.main-banner', {
 
 new Swiper('.products', {
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 20,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -27,7 +27,7 @@ new Swiper('.products', {
     breakpoints: {
       '@0.00': {
         slidesPerView: 1,
-        spaceBetween: 10,
+        spaceBetween: 20,
       },
       '@0.75': {
         slidesPerView: 2,
@@ -35,11 +35,11 @@ new Swiper('.products', {
       },
       '@1.00': {
         slidesPerView: 3,
-        spaceBetween: 40,
+        spaceBetween: 20,
       },
       '@1.50': {
         slidesPerView: 4,
-        spaceBetween: 50,
+        spaceBetween: 20,
       },
     }
 });
