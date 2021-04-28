@@ -1,19 +1,11 @@
 new Swiper('.main-banner', {
-    slidesPerView: 1,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    direction: 'horizontal',
-    pagination: {
+    /* pagination: {
       el: '.swiper-pagination',
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    scrollbar: {
-      el: '.swiper-scrollbar',
+      dynamicBullets: true,
+    }, */
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
     },
 });
 
@@ -73,8 +65,8 @@ new Swiper('.offers', {
 
 $(function(){
 
-  $('.category-item').click(function(e){
-    $('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top}, 100);
+  $('.category-item').parent().click(function(e){
+    $('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top}, 200);
   });
 
 });

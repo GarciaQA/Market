@@ -13,6 +13,21 @@ $('.see-more').on('click', function(e){
     window.open('https://www.tulivery.com/buscar?lat=-12.1117254&lon=-76.9927518', '_blank');
 });
 
+$('.category-item.ico').on('click', function(e){
+    e.preventDefault();
+    $('.md.menu').addClass('open');
+});
+
+$('.md.menu .close').on('click', function(e){
+    e.preventDefault();
+    $('.md.menu').removeClass('open');
+});
+
+$('.md.menu li').on('click', function(e){
+    e.preventDefault();
+    window.open('https://www.tulivery.com/buscar?lat=-12.1117254&lon=-76.9927518', '_blank');
+})
+
 $(function(){
     $.contextMenu({
         selector: '.context-menu-one', 

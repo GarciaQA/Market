@@ -20,6 +20,8 @@
 </head>
 
 <body>
+
+  <!-- header -->
   <nav class="navbar fixed-top navbar-light header">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Mitienda</a>
@@ -34,6 +36,7 @@
     </div>
   </nav>
 
+  <!-- carrusel de banners -->
   <div class="main-banner">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
@@ -53,10 +56,17 @@
       </div>
     </div>
   </div>
+  
 
+  <!-- barra de categorias -->
   <div class="row categories-web">
-    <a href="#abarrotes" class="col-6 col-md-2 category-item">
-      <div class="row g-0">
+    <a href="#" class="col-3 col-md-1">
+      <div class="category-item ico row g-0">
+        <span class="material-icons-round">format_list_bulleted</span>
+      </div>
+    </a>
+    <a href="#abarrotes" class="col-3 col-md-2">
+      <div class="category-item row g-0">
         <div class="col-md-4">
           <img src="resources/svg/grocery.svg" alt="grovery" class="category-img">
         </div>
@@ -67,8 +77,8 @@
         </div>
       </div>
     </a>
-    <a href="#vestuario" class="col-6 col-md-2 category-item">
-      <div class="row g-0">
+    <a href="#vestuario" class="col-3 col-md-2">
+      <div class="category-item row g-0">
         <div class="col-md-4">
           <img src="resources/svg/sport-wear.svg" alt="grovery" class="category-img">
         </div>
@@ -79,8 +89,8 @@
         </div>
       </div>
     </a>
-    <a href="#vestuario" class="col-6 col-md-2 category-item">
-      <div class="row g-0">
+    <a href="#vestuario" class="col-3 col-md-2">
+      <div class=" category-item row g-0">
         <div class="col-md-4">
           <img src="resources/svg/shoes.svg" alt="grovery" class="category-img">
         </div>
@@ -91,8 +101,8 @@
         </div>
       </div>
     </a>
-    <a href="#juguetes" class="col-6 col-md-2 category-item">
-      <div class="row g-0">
+    <a href="#juguetes" class="col-3 col-md-2">
+      <div class="category-item row g-0">
         <div class="col-md-4">
           <img src="resources/svg/toys.svg" alt="grovery" class="category-img">
         </div>
@@ -103,8 +113,8 @@
         </div>
       </div>
     </a>
-    <a href="#electro" class="col-6 col-md-2 category-item">
-      <div class="row g-0">
+    <a href="#electro" class="col-3 col-md-2">
+      <div class="category-item row g-0">
         <div class="col-md-4">
           <img src="resources/svg/televisor.svg" alt="grovery" class="category-img">
         </div>
@@ -115,21 +125,46 @@
         </div>
       </div>
     </a>
-    <a href="#" class="col-6 col-md-2 category-item context-menu-one">
-      <div class="row g-0">
-        <div class="col-md-12">
-          <div>
-            <h5 class="card-title">+ Categorias</h5>
-          </div>
-        </div>
-      </div>
-    </a>
   </div>
 
+  <!-- menu de categorias experimental -->
+  <div class="md menu">
+    <div class="md-title row g-o">
+      <div class="col-md-9">
+        <span>Categorias</span>
+      </div>
+      <div class="col-md-3">
+        <button class="close" type="button" size="12" shape="Circle" kind="BUTTON/TERTIARY"
+          aria-label="Close menu navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="flex-shrink: 0;">
+            <path
+              d="M17.2929 18.7071C17.6834 19.0976 18.3166 19.0976 18.7071 18.7071C19.0976 18.3166 19.0976 17.6834 18.7071 17.2929L13.4142 12L18.7071 6.70711C19.0976 6.31658 19.0976 5.68342 18.7071 5.29289C18.3166 4.90237 17.6834 4.90237 17.2929 5.29289L12 10.5858L6.70711 5.29289C6.31658 4.90237 5.68342 4.90237 5.29289 5.29289C4.90237 5.68342 4.90237 6.31658 5.29289 6.70711L10.5858 12L5.29289 17.2929C4.90237 17.6834 4.90237 18.3166 5.29289 18.7071C5.68342 19.0976 6.31658 19.0976 6.70711 18.7071L12 13.4142L17.2929 18.7071Z"
+              fill="#191919">
+            </path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="md-content">
+      <ul>
+        <li>Abarrotes</li>
+        <li>Vestuario</li>
+        <li>Calzado</li>
+        <li>Juguetes</li>
+        <li>Electro</li>
+        <li>Comidas</li>
+        <li>Bebidas</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- carrusel de productos u ofertas -->
   <div class="products segment1" id="abarrotes">
     <div class="d-flex justify-content-between">
       <div class="category-title">
-        <img src="resources/svg/sport-wear.svg" alt="grovery" class="category-img"><h2>Abarrotes</h2>
+        <img src="resources/svg/sport-wear.svg" alt="grovery" class="category-img">
+        <h2>Abarrotes</h2>
       </div>
       <div>
         <span class="see-more">Ver todos</span>
@@ -161,8 +196,6 @@
         </div>
       </div>
     </div>
-    <!-- Add Pagination -->
-
   </div>
 
   <!-- <div class="products segment2" id="vestuario">
@@ -248,7 +281,8 @@
   <div class="products segment2" id="vestuario">
     <div class="d-flex justify-content-between">
       <div class="category-title">
-        <img src="resources/svg/sport-wear.svg" alt="grovery" class="category-img"><h2>Vestuario</h2>
+        <img src="resources/svg/sport-wear.svg" alt="grovery" class="category-img">
+        <h2>Vestuario</h2>
       </div>
       <div>
         <span class="see-more">Ver todos</span>
@@ -280,14 +314,13 @@
         </div>
       </div>
     </div>
-    <!-- Add Pagination -->
-
   </div>
 
   <div class="products segment4" id="juguetes">
     <div class="d-flex justify-content-between">
       <div class="category-title">
-        <img src="resources/svg/toys.svg" alt="grovery" class="category-img"><h2>Juguetes</h2>
+        <img src="resources/svg/toys.svg" alt="grovery" class="category-img">
+        <h2>Juguetes</h2>
       </div>
       <div>
         <span class="see-more">Ver todos</span>
@@ -319,14 +352,13 @@
         </div>
       </div>
     </div>
-    <!-- Add Pagination -->
-
   </div>
 
   <div class="products segment5" id="electro">
     <div class="d-flex justify-content-between">
       <div class="category-title">
-        <img src="resources/svg/televisor.svg" alt="grovery" class="category-img"><h2>Electro</h2>
+        <img src="resources/svg/televisor.svg" alt="grovery" class="category-img">
+        <h2>Electro</h2>
       </div>
       <div>
         <span class="see-more">Ver todos</span>
@@ -358,10 +390,9 @@
         </div>
       </div>
     </div>
-    <!-- Add Pagination -->
-
   </div>
 
+  <!-- modal de detalle -->
   <div id="modal-details" class="modal fade animate__animated animate__zoomIn animate__faster" tabindex="-1"
     role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -372,6 +403,7 @@
     </div>
   </div>
 
+  <!-- footer -->
   <footer>
     <div class="d-flex justify-content-between">
       <div class="footer-col-1">
